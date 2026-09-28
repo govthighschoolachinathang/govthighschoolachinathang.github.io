@@ -23,18 +23,6 @@
   --sans: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f1522; --surface: #172033; --ink: #e8edf6; --ink-soft: #a9b4c9;
-    --line: #2a3650; --navy: #8fb0e8; --navy-ink: #0f1522; --gold: #dcae5a; --tint: #1c2840;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0f1522; --surface: #172033; --ink: #e8edf6; --ink-soft: #a9b4c9;
-  --line: #2a3650; --navy: #8fb0e8; --navy-ink: #0f1522; --gold: #dcae5a; --tint: #1c2840;
-  color-scheme: dark;
-}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
@@ -202,9 +190,9 @@ footer { border-top: 1px solid var(--line); padding-block: 24px; font-size: 0.85
         <div><dt>CBSE Affiliation No.</dt><dd>3720134</dd></div>
         <div><dt>CBSE School Code</dt><dd>24487</dd></div>
         <div><dt>UDISE Code</dt><dd>37070202401</dd></div>
-        <div><dt>Affiliated for</dt><dd>Secondary (Class X)</dd></div>
+        <div><dt>Affiliated for</dt><dd>Secondary School Examination (Class 1 to 10)</dd></div>
         <div><dt>Classes</dt><dd>Balvatika to Class X</dd></div>
-        <div><dt>Management</dt><dd>Government, UT of Ladakh</dd></div>
+        <div><dt>Management</dt><dd>Government</dd></div>
         <div><dt>Type</dt><dd>Co-educational</dd></div>
         <div><dt>Medium</dt><dd>English</dd></div>
         <div><dt>Site area</dt><dd>177.05 sq. m</dd></div>
@@ -215,7 +203,7 @@ footer { border-top: 1px solid var(--line); padding-block: 24px; font-size: 0.85
 
   <section id="results">
     <div class="wrap">
-      <h2>Class X board results</h2>
+      <h2>Board examination results</h2>
       <div class="results">
         <div class="result"><span>Session 2023–24</span><strong>80%</strong><span>pass percentage</span></div>
         <div class="result"><span>Session 2024–25</span><strong>63.64%</strong><span>pass percentage</span></div>
@@ -250,11 +238,11 @@ footer { border-top: 1px solid var(--line); padding-block: 24px; font-size: 0.85
             <tr><td>News Fund</td><td class="num">20</td><td class="num">20</td><td class="num">50</td></tr>
           </tbody>
           <tfoot>
-            <tr><td>Total</td><td class="num">₹200</td><td class="num">₹375</td><td class="num">₹850</td></tr>
+            <tr><td>Total</td><td class="num">200</td><td class="num">375</td><td class="num">850</td></tr>
           </tfoot>
         </table>
       </div>
-      <p class="note">All amounts in rupees. The signed fee structure is available under Documents.</p>
+      <p class="note">As per the signed fee structure, available under Documents.</p>
     </div>
   </section>
 
@@ -306,16 +294,16 @@ footer { border-top: 1px solid var(--line); padding-block: 24px; font-size: 0.85
   <section id="documents">
     <div class="wrap">
       <h2>Mandatory public disclosure</h2>
-      <p class="prose" style="margin-bottom:18px">Certificates and documents as required by CBSE. Each opens as a PDF.</p>
+      <p class="prose" style="margin-bottom:18px">Certificates and documents of the school. Each opens as a PDF.</p>
       <ul class="docs">
         <li><span><span class="title">Affiliation letter from CBSE</span><span class="meta">Affiliation No. 3720134, dated 08/02/2022</span></span><a href="documents/cbse-affiliation-letter.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">Society / Organisation Renewal Certificate</span><span class="meta">Chief Education Officer, Leh</span></span><a href="documents/society-renewal-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">No Objection Certificate (NOC)</span><span class="meta">Chief Education Officer, Leh, dated 14/08/2026</span></span><a href="documents/noc-education-department.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">Recognition Certificate under RTE Act, 2009</span><span class="meta">Valid 24/09/2026 to 24/09/2029</span></span><a href="documents/recognition-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
-        <li><span><span class="title">Building Safety Certificate</span><span class="meta">R&amp;B Division Khaltsi</span></span><a href="documents/building-safety-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
-        <li><span><span class="title">Building Plan</span><span class="meta">Verified by R&amp;B Division Khaltsi</span></span><a href="documents/building-plan.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Building Safety Certificate</span><span class="meta">R&amp;B Division Khaltsi, inspected 23/05/2026</span></span><a href="documents/building-safety-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Building Plan</span><span class="meta">Signed by Assistant Executive Engineer, R&amp;B Division Khaltsi</span></span><a href="documents/building-plan.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">Fire Safety Certificate</span><span class="meta">Ladakh Fire &amp; Rescue Service, issued 18/06/2026</span></span><a href="documents/fire-safety-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
-        <li><span><span class="title">Safe Drinking Water and Sanitation Certificate</span><span class="meta">PHE Division, Leh</span></span><a href="documents/drinking-water-sanitation-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Safe Drinking Water and Sanitation Certificate</span><span class="meta">PHE Division, Leh, dated 25/05/2026</span></span><a href="documents/drinking-water-sanitation-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">Land Certificate</span><span class="meta">177.05 sq. m</span></span><a href="documents/land-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">Fee Structure</span><span class="meta">Signed by the Headmaster</span></span><a href="documents/fee-structure.pdf" target="_blank" rel="noopener">View PDF</a></li>
         <li><span><span class="title">Last Three Years’ Board Examination Result</span><span class="meta">Sessions 2023–24 to 2025–26</span></span><a href="documents/board-exam-results.pdf" target="_blank" rel="noopener">View PDF</a></li>
@@ -340,7 +328,7 @@ footer { border-top: 1px solid var(--line); padding-block: 24px; font-size: 0.85
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Government High School Achinathang, UT of Ladakh</div>
+  <div class="wrap">Government High School Achinathang, Khaltse, Leh, UT of Ladakh 194106</div>
 </footer>
 
 </body>
