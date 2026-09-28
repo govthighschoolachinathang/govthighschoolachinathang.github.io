@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Govt. High School Achinathang</title>
+<meta name="description" content="Government High School Achinathang, Khaltse, Leh, UT of Ladakh. CBSE affiliated (No. 3720134), Balvatika to Class X.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Noto+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --ink: #16213a;
+  --ink-soft: #4a5570;
+  --line: #dbe1ec;
+  --navy: #1d3a6e;
+  --navy-ink: #ffffff;
+  --gold: #a8741c;
+  --tint: #eaf0f8;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1522; --surface: #172033; --ink: #e8edf6; --ink-soft: #a9b4c9;
+    --line: #2a3650; --navy: #8fb0e8; --navy-ink: #0f1522; --gold: #dcae5a; --tint: #1c2840;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1522; --surface: #172033; --ink: #e8edf6; --ink-soft: #a9b4c9;
+  --line: #2a3650; --navy: #8fb0e8; --navy-ink: #0f1522; --gold: #dcae5a; --tint: #1c2840;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 var(--sans);
+}
+img { max-width: 100%; display: block; }
+a { color: var(--navy); }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: 20px; }
+
+/* Header */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; flex-wrap: wrap; }
+.brand { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 0.9rem; }
+nav a { color: var(--ink-soft); text-decoration: none; }
+nav a:hover { color: var(--navy); text-decoration: underline; }
+
+/* Hero */
+.hero { padding-block: 40px 32px; }
+.hero .wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 36px; align-items: center; }
+.hero img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
+.eyebrow { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+.hero h1 { font-size: clamp(2rem, 4.4vw, 2.9rem); margin-block: 8px 12px; color: var(--navy); }
+.hero .lede { color: var(--ink-soft); max-width: 46ch; }
+.codes { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+.codes div { display: flex; flex-direction: column; }
+.codes span { font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+.codes strong { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Sections */
+section { padding-block: 44px; border-top: 1px solid var(--line); }
+section h2 { font-size: 1.7rem; margin-bottom: 18px; }
+.prose { max-width: 68ch; display: grid; gap: 14px; }
+
+.vision {
+  background: var(--navy); color: var(--navy-ink);
+  border-radius: 6px; padding: 28px 32px; margin-top: 28px;
+}
+.vision .eyebrow { color: inherit; opacity: 0.8; }
+.vision blockquote { margin: 8px 0 0; font-family: var(--serif); font-size: 1.2rem; line-height: 1.55; max-width: 62ch; }
+
+/* Info list */
+.facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; margin: 0; }
+.facts div { display: grid; grid-template-columns: 11rem 1fr; gap: 12px; padding-block: 11px; border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--ink-soft); font-size: 0.92rem; }
+.facts dd { margin: 0; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* Tables */
+.table-scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+thead th { background: var(--tint); font-weight: 600; font-size: 0.85rem; color: var(--ink); }
+tbody tr:last-child td, tfoot tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tfoot td { font-weight: 600; background: var(--tint); }
+.note { font-size: 0.88rem; color: var(--ink-soft); margin-top: 10px; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.two h3 { font-size: 1.2rem; margin-bottom: 12px; }
+
+/* Results */
+.results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.result { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; }
+.result span { font-size: 0.85rem; color: var(--ink-soft); }
+.result strong { display: block; font-family: var(--serif); font-size: 2rem; font-weight: 600; color: var(--navy); font-variant-numeric: tabular-nums; }
+
+/* Documents */
+.docs { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+.docs li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.docs li:last-child { border-bottom: 0; }
+.docs .title { font-weight: 500; }
+.docs .meta { display: block; font-size: 0.85rem; color: var(--ink-soft); }
+.docs a { flex-shrink: 0; font-size: 0.9rem; font-weight: 600; text-decoration: none; border: 1px solid var(--line); padding: 5px 12px; border-radius: 4px; white-space: nowrap; }
+.docs a:hover { background: var(--tint); }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.contact span { display: block; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 4px; }
+.contact p, .contact a { font-weight: 500; overflow-wrap: anywhere; }
+
+footer { border-top: 1px solid var(--line); padding-block: 24px; font-size: 0.85rem; color: var(--ink-soft); }
+
+@media (max-width: 800px) {
+  .hero .wrap, .two, .facts, .contact { grid-template-columns: 1fr; }
+  .results { grid-template-columns: 1fr; }
+  .facts div { grid-template-columns: 9.5rem 1fr; }
+  .vision { padding: 22px; }
+  .top { position: static; }
+  .hero { padding-block: 24px; }
+  .hero .wrap { gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">GHS Achinathang</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#fees">Fees</a></li>
+        <li><a href="#committees">Committees</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <img src="images/school.jpg" alt="The school building at Achinathang, with the school signboard and trees along the path" width="1280" height="960">
+      <div>
+        <p class="eyebrow">Khaltse, Leh, Ladakh</p>
+        <h1>Government High School Achinathang</h1>
+        <p class="lede">A co-educational, English medium government school affiliated to CBSE, teaching children from Balvatika to Class X.</p>
+        <div class="codes">
+          <div><span>CBSE Affiliation No.</span><strong>3720134</strong></div>
+          <div><span>School Code</span><strong>24487</strong></div>
+          <div><span>UDISE Code</span><strong>37070202401</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About the school</h2>
+      <div class="prose">
+        <p>Government High School Achinathang is a government educational institution located in the picturesque village of Achinathang in the Union Territory of Ladakh. The school is committed to providing quality, inclusive and accessible education to children from the surrounding rural and remote communities.</p>
+        <p>The school provides education from Balvatika to Class X and follows the CBSE curriculum, with emphasis on academic learning, character building, scientific temperament, creativity, discipline and the overall development of students.</p>
+        <p>Situated in the unique high-altitude environment of Ladakh, the school strives to provide students with opportunities to learn both inside and outside the classroom. Academic activities are complemented by co-curricular activities, sports, environmental initiatives, clubs, community participation and experiential learning.</p>
+        <p>The school aims to nurture responsible, confident and socially conscious learners while respecting the rich cultural heritage and traditions of Ladakh. With the dedicated efforts of its teachers, students, parents and the community, Government High School Achinathang continues to work towards creating a supportive and enriching learning environment for every child.</p>
+      </div>
+      <div class="vision">
+        <p class="eyebrow">Our Vision</p>
+        <blockquote>To be a centre of excellence in inclusive, equitable and quality education, nurturing confident, responsible and compassionate lifelong learners. We aim to foster scientific temper, critical thinking, creativity, environmental awareness and respect for Ladakh’s rich cultural heritage, while equipping students with the knowledge, skills and values to contribute to the nation.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="wrap">
+      <h2>General information</h2>
+      <dl class="facts">
+        <div><dt>Name of school</dt><dd>Govt. High School Achinathang</dd></div>
+        <div><dt>Headmaster</dt><dd>Tashi Angmo</dd></div>
+        <div><dt>CBSE Affiliation No.</dt><dd>3720134</dd></div>
+        <div><dt>CBSE School Code</dt><dd>24487</dd></div>
+        <div><dt>UDISE Code</dt><dd>37070202401</dd></div>
+        <div><dt>Affiliated for</dt><dd>Secondary (Class X)</dd></div>
+        <div><dt>Classes</dt><dd>Balvatika to Class X</dd></div>
+        <div><dt>Management</dt><dd>Government, UT of Ladakh</dd></div>
+        <div><dt>Type</dt><dd>Co-educational</dd></div>
+        <div><dt>Medium</dt><dd>English</dd></div>
+        <div><dt>Site area</dt><dd>177.05 sq. m</dd></div>
+        <div><dt>Address</dt><dd>Achinathang, Khaltse, Leh, UT of Ladakh 194106</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="wrap">
+      <h2>Class X board results</h2>
+      <div class="results">
+        <div class="result"><span>Session 2023–24</span><strong>80%</strong><span>pass percentage</span></div>
+        <div class="result"><span>Session 2024–25</span><strong>63.64%</strong><span>pass percentage</span></div>
+        <div class="result"><span>Session 2025–26</span><strong>100%</strong><span>pass percentage</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees">
+    <div class="wrap">
+      <h2>Fee structure</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Fund</th><th class="num">Class 1–5</th><th class="num">Class 6–8</th><th class="num">Class 9–10</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>School Improvement Fund</td><td class="num">30</td><td class="num">80</td><td class="num">110</td></tr>
+            <tr><td>Red Cross Fund</td><td class="num">15</td><td class="num">25</td><td class="num">35</td></tr>
+            <tr><td>Mutual Benefit Fund</td><td class="num">20</td><td class="num">15</td><td class="num">35</td></tr>
+            <tr><td>Game Fund</td><td class="num">30</td><td class="num">50</td><td class="num">65</td></tr>
+            <tr><td>Admission Fund</td><td class="num">15</td><td class="num">25</td><td class="num">40</td></tr>
+            <tr><td>Printing Fund</td><td class="num">10</td><td class="num">25</td><td class="num">40</td></tr>
+            <tr><td>Science Fund</td><td class="num">0</td><td class="num">20</td><td class="num">60</td></tr>
+            <tr><td>Computer Fund</td><td class="num">0</td><td class="num">30</td><td class="num">85</td></tr>
+            <tr><td>Library Development Fund</td><td class="num">0</td><td class="num">0</td><td class="num">75</td></tr>
+            <tr><td>Social Activity Fund</td><td class="num">20</td><td class="num">25</td><td class="num">40</td></tr>
+            <tr><td>Sweeping Charge</td><td class="num">40</td><td class="num">40</td><td class="num">60</td></tr>
+            <tr><td>Magazine Fund</td><td class="num">0</td><td class="num">0</td><td class="num">75</td></tr>
+            <tr><td>Forms and Prospectus</td><td class="num">0</td><td class="num">0</td><td class="num">30</td></tr>
+            <tr><td>Electricity Fund</td><td class="num">0</td><td class="num">20</td><td class="num">50</td></tr>
+            <tr><td>News Fund</td><td class="num">20</td><td class="num">20</td><td class="num">50</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>Total</td><td class="num">₹200</td><td class="num">₹375</td><td class="num">₹850</td></tr>
+          </tfoot>
+        </table>
+      </div>
+      <p class="note">All amounts in rupees. The signed fee structure is available under Documents.</p>
+    </div>
+  </section>
+
+  <section id="committees">
+    <div class="wrap">
+      <h2>Committees</h2>
+      <div class="two">
+        <div>
+          <h3>School Management Committee</h3>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Name</th><th>Designation</th></tr></thead>
+              <tbody>
+                <tr><td>Tashi Angmo (Headmaster)</td><td>Chairperson</td></tr>
+                <tr><td>Thinles Norboo</td><td>Parent Representative</td></tr>
+                <tr><td>Rinchen Lamo</td><td>Parent Representative</td></tr>
+                <tr><td>Phunchok Dolma</td><td>Teacher Representative</td></tr>
+                <tr><td>Tashi Dorjay</td><td>Teacher Representative</td></tr>
+                <tr><td>Padma Chorol</td><td>Teacher Representative</td></tr>
+                <tr><td>Stanzin Namgail</td><td>Student Representative</td></tr>
+                <tr><td>Stanzin Lazes</td><td>Student Representative</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h3>Parents Teacher Association</h3>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Name</th><th>Designation</th></tr></thead>
+              <tbody>
+                <tr><td>Thinles Norboo</td><td>President</td></tr>
+                <tr><td>Thinles Chuskit</td><td>Vice-President</td></tr>
+                <tr><td>Tashi Dorjay</td><td>Secretary</td></tr>
+                <tr><td>Tsering Dolma</td><td>Joint Secretary</td></tr>
+                <tr><td>Sonam Youton</td><td>Treasurer</td></tr>
+                <tr><td>Hakima Khatoon</td><td>Executive Member</td></tr>
+                <tr><td>Tsering Namgail</td><td>General Member</td></tr>
+                <tr><td>Tsewang Dolker</td><td>General Member</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <p class="note">All members are residents of Achinathang.</p>
+    </div>
+  </section>
+
+  <section id="documents">
+    <div class="wrap">
+      <h2>Mandatory public disclosure</h2>
+      <p class="prose" style="margin-bottom:18px">Certificates and documents as required by CBSE. Each opens as a PDF.</p>
+      <ul class="docs">
+        <li><span><span class="title">Affiliation letter from CBSE</span><span class="meta">Affiliation No. 3720134, dated 08/02/2022</span></span><a href="documents/cbse-affiliation-letter.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Society / Organisation Renewal Certificate</span><span class="meta">Chief Education Officer, Leh</span></span><a href="documents/society-renewal-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">No Objection Certificate (NOC)</span><span class="meta">Chief Education Officer, Leh, dated 14/08/2026</span></span><a href="documents/noc-education-department.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Recognition Certificate under RTE Act, 2009</span><span class="meta">Valid 24/09/2026 to 24/09/2029</span></span><a href="documents/recognition-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Building Safety Certificate</span><span class="meta">R&amp;B Division Khaltsi</span></span><a href="documents/building-safety-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Building Plan</span><span class="meta">Verified by R&amp;B Division Khaltsi</span></span><a href="documents/building-plan.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Fire Safety Certificate</span><span class="meta">Ladakh Fire &amp; Rescue Service, issued 18/06/2026</span></span><a href="documents/fire-safety-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Safe Drinking Water and Sanitation Certificate</span><span class="meta">PHE Division, Leh</span></span><a href="documents/drinking-water-sanitation-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Land Certificate</span><span class="meta">177.05 sq. m</span></span><a href="documents/land-certificate.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Fee Structure</span><span class="meta">Signed by the Headmaster</span></span><a href="documents/fee-structure.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Last Three Years’ Board Examination Result</span><span class="meta">Sessions 2023–24 to 2025–26</span></span><a href="documents/board-exam-results.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">List of School Management Committee</span></span><a href="documents/school-management-committee.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Parents Teacher Association</span></span><a href="documents/parents-teacher-association.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">Undertaking by Principal: OASIS Data Updation</span></span><a href="documents/oasis-undertaking.pdf" target="_blank" rel="noopener">View PDF</a></li>
+        <li><span><span class="title">School Vision</span></span><a href="documents/school-vision.pdf" target="_blank" rel="noopener">View PDF</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div><span>Address</span><p>Govt. High School Achinathang<br>Khaltse, Leh, UT of Ladakh 194106</p></div>
+        <div><span>Email</span><a href="mailto:tashiangmoleh@gmail.com">tashiangmoleh@gmail.com</a></div>
+        <div><span>Phone</span><a href="tel:+919797980324">+91 97979 80324</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Government High School Achinathang, UT of Ladakh</div>
+</footer>
+
+</body>
+</html>
